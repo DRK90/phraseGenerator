@@ -8,3 +8,15 @@ const verbBank = ["resumes","reproduces with","disagrees with","welcomes", "pose
 "transmits to the", "states that", "shows the", "informs the"]
 const nounBank =["psychology", "wife", "profession", "growth", "driver", "inspector", "criticism", "apple", 
 "potato", "relationship"]
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+let name = nameBank[getRandomInt(nameBank.length)];
+let verb = verbBank[getRandomInt(verbBank.length)];
+let noun = nounBank[getRandomInt(nounBank.length)];
+
+let message = name +" "+ verb +" "+ noun;
+
+console.log(message);
